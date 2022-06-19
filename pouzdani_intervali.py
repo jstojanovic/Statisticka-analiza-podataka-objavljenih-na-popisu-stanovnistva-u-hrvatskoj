@@ -8,17 +8,24 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+#intervali pouzdanosti
 #Zadatak 1.
 #podaci:
-n=40
-x=32.45
-s=2.44
+n=277
+x=235.22743682310468
+s=1090.9510720299668
 #(a):
 interval1=scipy.stats.t.interval(alpha=0.95, df=n-1, loc=x, scale=s) 
+#Zadatak 2.
+#podaci:
+n=277
+x=235.22743682310468
+s=1090.9510720299668
 #(b):
 interval2=scipy.stats.t.interval(alpha=0.85, df=n-1, loc=x, scale=s) 
 
-#Zadatak 2.
+#testiranje hipoteza
+#Zadatak 1.
 #podaci:
 mu=1
 sigma=0.03
