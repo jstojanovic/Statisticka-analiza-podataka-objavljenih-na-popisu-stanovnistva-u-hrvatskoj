@@ -15,7 +15,8 @@ n=277
 x=235.22743682310468
 s=1090.9510720299668
 #(a):
-interval1=scipy.stats.t.interval(alpha=0.95, df=n-1, loc=x, scale=s) 
+interval1=scipy.stats.t.interval(alpha=0.95, df=n-1, loc=x, scale=s)
+print('Interval pouzdanosti 95%: ',interval1)
 #Zadatak 2.
 #podaci:
 n=277
@@ -23,7 +24,7 @@ x=235.22743682310468
 s=1090.9510720299668
 #(b):
 interval2=scipy.stats.t.interval(alpha=0.85, df=n-1, loc=x, scale=s) 
-
+print('Interval pouzdanosti 85%: ',interval2)
 #testiranje hipoteza
 #Zadatak 1. 
 
@@ -32,8 +33,8 @@ n1=277
 x1=235.22743682310468
 s1=1090.9510720299668
 n2=200
-x2=#cekam podatke
-s2=#cekam podatke
+x2=260.16
+s2=1270.3501493326744
 alpha=0.05
 
 #test varijance:
